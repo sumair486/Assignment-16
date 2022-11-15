@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 16</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+		//Write a JavaScript program to extract the first half of a given array and show the output in new variable &quot;categories_firsthalf&quot;
+
+		let categories = ["Health", "Fashion","Toys","Electronic","TV","Sports","Watches","Motorbike","Home and Lifestyle","Devices"];
+
+		let categories_firsthalf=categories.splice(0,5);
+		document.write(categories_firsthalf,"<br>");
+
+
+		//Write a JavaScript program to concatenate two array except their first index.
+const str1 = ["Apple","Bananna","Orange","Grapes"];
+const str2 = ["abc","def","ghi","jkl"];
+
+
+str1.shift();
+str2.shift();
+
+
+const str3=(str1.concat(str2));
+document.write(str3,"<br>");
+
+
+
+
+
+		//Write a JavaScript program to sort the given array in ascending and descending order.
+
+
+
+    let arr1 = (a,b)=>{
+        return a-b
+    }
+
+    const NumericArray = ['80','9','700','40','1','5','200'];
+    NumericArray.sort(arr1)
+    console.log(NumericArray);
+    document.write(NumericArray,"<br>");
+
+        let arr2 = (a,b)=>{
+        return b-a
+    }
+
+    const NumericArray1 = ['80','9','700','40','1','5','200'];
+    NumericArray1.sort(arr2)
+    console.log(NumericArray1);
+    document.write(NumericArray1,"<br>");
+
+    //Write a JavaScript program to add &quot;Feb&quot; at the index 1.
+
+    const months = ["Jan","March","April","Dec"];
+
+    delete months[3];
+    document.write(months,"<br>");
+    months[3]=["March","june","<br>"];
+    document.write(months);
+
+
+    //Write a JavaScript program to join given array with "and"
+
+    let joinarr = ["Me","my family"];
+    let join=joinarr.join(" and ","<br>");
+    document.write(join,"<br>")
+
+    //Write JS Condition for the following conditions:
+// 1. number greater than 2 and less than 10 then result should be &quot;Number is between 2 and 10&quot;
+// 2. number greater than 10 and less than 19 then reult should be &quot;Number is between 10 and 19&quot;
+// 3. number greater than 19 and less than 30 then reult should be &quot;Number is between 19 and 29&quot;
+// 4. If selection is not in these values then result should be &quot;Sorry try again&quot;
+
+let no=prompt('enter number');
+if(no>=2 && no<=10){
+	document.write("Number is between 2 and 10");
+} else if (no>=10 && no<=19){
+	document.write('Number is between 10 and 19');
+} else if (no>=19 && no<=30){
+	document.write('Number is between 19 and 29');
+}else{
+	document.write('sorry try again');
+}
+
+
+
+
+
+	</script>
+
+</body>
+</html>
